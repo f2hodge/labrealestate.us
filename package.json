@@ -1,0 +1,22 @@
+{
+  "name": "labrealestate.us",
+  "version": "1.0.0",
+  "description": "Website for LAB Real Estate in Lake Worth Florida",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f2hodge/labrealestate.us.git"
+  },
+  "author": "SiteHound",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/f2hodge/labrealestate.us/issues"
+  },
+  "homepage": "https://github.com/f2hodge/labrealestate.us#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
