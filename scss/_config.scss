@@ -5,8 +5,12 @@ $show-home-image: true;
 $horse-banner-image: url(../img/three-horse-banner.png);
 $background-opacity: 0.9;
 
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
 @mixin background {
-    @if $show-image {
+    @if $show-home-image {
         &#bg-img {
             background: $horse-banner-image;
             background-attachment: fixed;
