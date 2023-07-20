@@ -1,6 +1,8 @@
 * {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif; }
+  box-sizing: border-box; }
+
+.navbar {
+  display: block; }
 
 .navbar-brand {
   float: left; }
@@ -54,10 +56,10 @@ a {
   text-decoration: none; }
 
 header {
+  background-color: #333;
   position: fixed;
   z-index: 2;
-  width: 100%;
-  display: inline; }
+  width: 100%; }
 
 .text-secondary {
   color: #4402df; }

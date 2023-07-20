@@ -2,11 +2,14 @@
 // @import 'menu';
 
 * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 // Navbar styling
+.navbar {
+  display: block;
+}
+
 .navbar-brand {
   float: left;
 }
@@ -60,10 +63,11 @@ a {
 }
 
 header {
+  background-color: #333;
   position: fixed;
   z-index: 2;
   width: 100%;
-  display: inline;
+  // display: inline;
 }
 
 .text-secondary {
@@ -90,12 +94,13 @@ main {
 
   &#home {
     overflow: hidden;
+
     h1 {
       margin-top: 20vh;
     }
   }
 }
-  
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -134,7 +139,7 @@ main {
     border-bottom: $secondary-color 5px solid;
   }
 }
-  
+
 // Work/Projects
 .projects {
   display: grid;
@@ -152,7 +157,7 @@ main {
     }
   }
 }
-  
+
 // Contact Page
 .boxes {
   display: flex;
@@ -172,19 +177,21 @@ main {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
+
       span {
         color: set-text-color($secondary-color);
       }
     }
   }
 }
-  
+
 // Button Styles
 .btn {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
