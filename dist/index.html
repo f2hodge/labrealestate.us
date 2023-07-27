@@ -13,11 +13,6 @@
 
 <body>
     <header>
-        <!-- may or may not use this button to open the nav -->
-        <!-- Might make a menu button house icon that opens the nav menu
-        <div class="menu-btn">
-            <div class="btn-symbol"></div>
-        </div> -->
         <!-- Create the menu here -->
         <div class="container">
             <nav class="navbar">
@@ -49,7 +44,7 @@
 
     <main id="home">
         <!-- Showcase Section: top billboard -->
-        <section class="bg-img">
+        <section class="bg-img" id="showcase">
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div>
@@ -61,53 +56,70 @@
         </section>
 
         <!-- Tidbits Section: 3 categories -->
-        <section class="p-5">
+        <section class="p-5" id="tidbits">
             <div class="container">
-                <div class="tidbits">
-                    <!-- Column 1: Homes -->
-                    <div class="tidbit tid-1">
-                        <div class="h1 mb-3">
-                            <i class="fas fa-house"></i>
+
+                <!-- Column 1: Homes -->
+                <div class="col-md tid-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="fas fa-house"></i>
+                            </div>
+                            <h3>Homes for Sale</h3>
+                            <p>We have lived here for decades and provide you with warm introductions. The sellers here have
+                                resided with us in this community as neighbors.</p>
+                            <a href="#" class="btn btn-primary">See Homes</a>
                         </div>
-                        <h3>Homes for Sale</h3>
-                        <p>We have lived here for decades and provide you with warm introductions. The sellers here have
-                            resided with us in this community as neighbors.</p>
-                        <a href="#" class="btn btn-primary">See Homes</a>
-                    </div>
-                    <!-- Column 2: Lots -->
-                    <div class="tidbit tid-2">
-                        <div class="h1 mb-3">
-                            <i class="fas fa-map-location-dot"></i>
-                        </div>
-                        <h3>Available Lots</h3>
-                        <p>Every lot in this neighborhood has been sold by our team at least once. Let us guide you to
-                            the right location for your dream.</p>
-                        <a href="#" class="btn btn-primary">See Lots</a>
-                    </div>
-                    <!-- Column 3: Sell -->
-                    <div class="tidbit tid-3">
-                        <div class="h1 mb-3">
-                            <i class="fas fa-sign-hanging"></i>
-                        </div>
-                        <h3>List with Us</h3>
-                        <p>Families have moved here and moved away. The Homeland agency that has been here since the
-                            beginning can get what you deserve for your property.</p>
-                        <a href="#" class="btn btn-primary">More Info</a>
                     </div>
                 </div>
+
+                <!-- Column 2: Lots -->
+                <div class="col-md tid-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="fas fa-map-location-dot"></i>
+                            </div>
+                            <h3>Available Lots</h3>
+                            <p>Every lot in this neighborhood has been sold by our team at least once. Let us guide you to
+                                the right location for your dream.</p>
+                            <a href="#" class="btn btn-primary">See Lots</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Sell -->
+                <div class="col-md">
+                    <div class="card tid-1">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="fas fa-sign-hanging"></i>
+                            </div>
+                            <h3>List with Us</h3>
+                            <p>Families have moved here and moved away. The Homeland agency that has been here since the
+                                beginning can get what you deserve for your property.</p>
+                            <a href="#" class="btn btn-primary">More Info</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- Testimonial Section: 3-view Carousel -->
         <section class="p-5 bg-primary" id="testimonials">
-            <div class="container"></div>
+            <div class="container"> <h4>Testimonial Container</h4> </div>
         </section>
+
+        <div id="spacer"></div>
+        <h1>Under Spacer</h1>
     </main>
 
     <!-- Footer -->
     <footer id="main-footer">
         <div class="container">
-            <p class="lead">Copyright &copy; 2022 LAB Real Estate, created by <a href="https://sitehound.us/" id="sitehound">SiteHound</a></p>
+            <p class="lead">Copyright &copy; 2022 LAB Real Estate, created by <a href="https://sitehound.us/" target="_blank" id="sitehound">SiteHound</a></p>
 
             <div class="right-nav">
                 <!-- Social Media Links -->
