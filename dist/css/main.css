@@ -44,8 +44,30 @@ footer {
   background-color: #1e5c2d;
   color: #c9dbc4;
   position: fixed;
-  width: 100%; }
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: solid #270c68 4px; }
   footer .container {
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: space-between; }
+    footer .container #sitehound {
+      transition: all 0.5s ease-out;
+      color: #a0c098; }
+      footer .container #sitehound:hover {
+        color: #ee6f1a; }
+    footer .container div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      footer .container div .up-arrow {
+        padding: 0.5rem; }
+    footer .container .social-nav {
+      display: flex; }
+      footer .container .social-nav .soc-li {
+        padding: 0.3rem; }
+      footer .container .social-nav a {
+        transition: all 0.5s ease-out; }
+        footer .container .social-nav a:hover {
+          color: #270c68; }

@@ -53,11 +53,49 @@ main {
 footer {
     @include set-background($primary-color);
     position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    border-top: solid $secondary-color 4px;
 
     .container {
         display: flex;
-        text-align: center;
+        align-items: center;
         justify-content: space-between;
+
+        #sitehound {
+            @include easeOut;
+            color: darken($tertiary-color, 14%);
+
+            &:hover {
+                color: #ee6f1a;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .up-arrow {
+                padding: 0.5rem;
+            }
+        }
+
+        .social-nav {
+            display: flex;
+            
+            .soc-li {
+                padding: 0.3rem;
+            }
+
+            a {
+                @include easeOut;
+    
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
     }
 }
