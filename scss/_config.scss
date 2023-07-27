@@ -1,5 +1,6 @@
+$font-stack: Arial, Helvetica, sans-serif;
 $primary-color: rgb(30, 92, 45);
-$secondary-color: rgb(68, 2, 223);
+$secondary-color: rgb(39, 12, 104);
 $tertiary-color: rgb(201, 219, 196);
 $show-home-image: true;
 $horse-banner-image: url(../img/three-horse-banner.png);
@@ -31,10 +32,16 @@ $background-opacity: 0.9;
 // Set Text Color
 @function set-text-color($color) {
     @if(lightness($color) > 40) {
-        @return #000;
+        @return $secondary-color;
     } @else {
-        @return #fff;
+        @return $tertiary-color;
     }
+}
+
+// Set Background & Text colors
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
 }
 
 // Media Query Mixins

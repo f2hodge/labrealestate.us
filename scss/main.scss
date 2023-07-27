@@ -1,0 +1,63 @@
+@import 'config';
+@import 'utilities';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: set-text-color($primary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: $font-stack;
+    height: 300vh;
+}
+
+header {
+    @include set-background($primary-color);
+    position: fixed;
+    width: 100%;
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            padding: 0.4rem;
+            @include easeOut;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+main {
+    padding-top: 9rem;
+}
+
+footer {
+    @include set-background($primary-color);
+    position: fixed;
+    width: 100%;
+
+    .container {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+}
