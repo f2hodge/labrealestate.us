@@ -36,23 +36,30 @@ h4,
 h5 {
     margin: 0;
     font-weight: 400;
+    color: #fff;
+    width: fit-content;
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        text-shadow: 4px 4px 4px rgba(darken($secondary-color, 28), 0.5);
+        background: rgba(lighten($primary-color, 2), $background-opacity);
     }
 
     &.sm-heading {
         margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        text-shadow: 3px 3px 3px rgba(darken($secondary-color, 28), 0.5);
+        padding: 0.2rem 1rem 0.2rem 2rem;
+        background: rgba(lighten($primary-color, 2), $background-opacity);
     }
 }
 
 header {
-    @include set-background($primary-color);
+    @include set-background(darken($primary-color, 4));
     position: fixed;
     width: 100%;
     height: 42px;
+    border-bottom: solid $secondary-color 4px;
     
     .navbar {
         display: flex;
@@ -68,23 +75,47 @@ header {
             @include easeOut;
 
             &:hover {
-                color: $secondary-color;
+                color: lighten($secondary-color, 49);
             }
         }
     }
 }
 
 main {
+    display: grid;
     padding-top: 42px;
 }
 
+// Showcase section
 #showcase {
-    @include set-background($secondary-color);
-    // background-image: url('../img/background5.jpg');
+    // @include set-background($tertiary-color);
+    @include background;
+    background-image: url(../img/three-horse-banner.png);
+
+    .container {
+        display: flex;
+        height: 50vh;
+        align-items: end;
+    }
 }
 
 #tidbits {
-    @include set-background($primary-color);
+    @include set-background(rgba(darken($primary-color, 7), 0.9));
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tid-1, .tid-3 {
+        @include set-background(rgba(darken($tertiary-color, 7), 0.9));
+    }
+
+    .tid-2 {
+        @include set-background(rgba(darken($secondary-color, 7), 0.9));
+    }
 }
 
 #testimonials {
@@ -96,7 +127,7 @@ main {
 }
 
 footer {
-    @include set-background($primary-color);
+    @include set-background(darken($primary-color, 4));
     // position: absolute;
     // bottom: 0;
     // left: 0;
@@ -138,7 +169,7 @@ footer {
                 @include easeOut;
     
                 &:hover {
-                    color: $secondary-color;
+                    color: lighten($secondary-color, 42);
                 }
             }
         }

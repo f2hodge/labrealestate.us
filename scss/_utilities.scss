@@ -4,3 +4,22 @@
     margin: 0 auto;
     overflow: auto;
 }
+
+.card {
+    margin: 0.7rem;
+    padding: 0.4rem;
+    border-radius: 7%;
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.2rem;
+
+        h3 {
+            margin: 1rem ;
+        }
+    }
+}

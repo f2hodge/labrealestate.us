@@ -1,8 +1,112 @@
+.m-1 {
+  margin: 1rem; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.mx-1 {
+  margin: 0 1rem; }
+
+.p-1 {
+  padding: 1rem; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.px-1 {
+  padding: 0 1rem; }
+
+.m-2 {
+  margin: 2rem; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.mx-2 {
+  margin: 0 2rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.px-2 {
+  padding: 0 2rem; }
+
+.m-3 {
+  margin: 3rem; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.mx-3 {
+  margin: 0 3rem; }
+
+.p-3 {
+  padding: 3rem; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.px-3 {
+  padding: 0 3rem; }
+
+.m-4 {
+  margin: 4rem; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+.mx-4 {
+  margin: 0 4rem; }
+
+.p-4 {
+  padding: 4rem; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.px-4 {
+  padding: 0 4rem; }
+
+.m-5 {
+  margin: 5rem; }
+
+.my-5 {
+  margin: 5rem 0; }
+
+.mx-5 {
+  margin: 0 5rem; }
+
+.p-5 {
+  padding: 5rem; }
+
+.py-5 {
+  padding: 5rem 0; }
+
+.px-5 {
+  padding: 0 5rem; }
+
 .container {
   max-width: 1500px;
   padding: 0 30px;
   margin: 0 auto;
   overflow: auto; }
+
+.card {
+  margin: 0.7rem;
+  padding: 0.4rem;
+  border-radius: 7%; }
+  .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.2rem; }
+    .card .card-body h3 {
+      margin: 1rem; }
 
 * {
   box-sizing: border-box;
@@ -32,28 +136,35 @@ h3,
 h4,
 h5 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #fff;
+  width: fit-content; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading,
   h4.lg-heading,
   h5.lg-heading {
-    font-size: 6rem; }
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    background: rgba(33, 100, 49, 0.1); }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading,
   h4.sm-heading,
   h5.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(33, 100, 49, 0.5); }
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    padding: 0.2rem 1rem 0.2rem 2rem;
+    background: rgba(33, 100, 49, 0.1); }
 
 header {
-  background-color: #1e5c2d;
+  background-color: #194d25;
   color: #c9dbc4;
   position: fixed;
   width: 100%;
-  height: 42px; }
+  height: 42px;
+  border-bottom: solid #270c68 4px; }
   header .navbar {
     display: flex;
     align-items: center;
@@ -64,18 +175,44 @@ header {
       padding: 0.4rem;
       transition: all 0.5s ease-out; }
       header .navbar a:hover {
-        color: #270c68; }
+        color: #9f7ef0; }
 
 main {
+  display: grid;
   padding-top: 42px; }
 
 #showcase {
-  background-color: #270c68;
-  color: #c9dbc4; }
+  background-image: url(../img/three-horse-banner.png); }
+  #showcase#bg-img {
+    background: url(../img/three-horse-banner.png);
+    background-attachment: fixed;
+    background-size: cover; }
+    #showcase#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%; }
+  #showcase .container {
+    display: flex;
+    height: 50vh;
+    align-items: end; }
 
 #tidbits {
-  background-color: #1e5c2d;
+  background-color: rgba(21, 65, 32, 0.9);
   color: #c9dbc4; }
+  #tidbits .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  #tidbits .tid-1, #tidbits .tid-3 {
+    background-color: rgba(181, 205, 174, 0.9);
+    color: #270c68; }
+  #tidbits .tid-2 {
+    background-color: rgba(27, 8, 72, 0.9);
+    color: #c9dbc4; }
 
 #testimonials {
   background-color: #333;
@@ -85,7 +222,7 @@ main {
   height: 300vh; }
 
 footer {
-  background-color: #1e5c2d;
+  background-color: #194d25;
   color: #c9dbc4;
   width: 100%;
   border-top: solid #270c68 4px; }
@@ -111,4 +248,4 @@ footer {
       footer .container .social-nav a {
         transition: all 0.5s ease-out; }
         footer .container .social-nav a:hover {
-          color: #270c68; }
+          color: #885eec; }
