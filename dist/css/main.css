@@ -97,7 +97,8 @@
 .card {
   margin: 0.7rem;
   padding: 0.4rem;
-  border-radius: 7%; }
+  border-radius: 7%;
+  min-height: 49vh; }
   .card .card-body {
     display: flex;
     flex-direction: column;
