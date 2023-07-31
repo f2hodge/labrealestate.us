@@ -5,6 +5,10 @@
     overflow: auto;
 }
 
+.col-md {
+    display: flex;
+}
+
 .card {
     margin: 0.7rem;
     padding: 0.4rem;
@@ -18,10 +22,13 @@
         justify-content: center;
         text-align: center;
         // height: 28vh;
-        padding: 0.2rem;
+        // padding: 0.2rem;
 
         h3 {
             margin: 1rem ;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 16px;
         }
     }
 }
