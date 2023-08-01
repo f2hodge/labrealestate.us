@@ -109,6 +109,13 @@ main {
         justify-content: space-between;
     }
 
+    .col-md {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
     .tid-1, .tid-3 {
         @include set-background(rgba(darken($tertiary-color, 7), 0.9));
     }

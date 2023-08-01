@@ -213,6 +213,11 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; }
+  #tidbits .col-md {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
   #tidbits .tid-1, #tidbits .tid-3 {
     background-color: rgba(181, 205, 174, 0.9);
     color: #270c68; }
