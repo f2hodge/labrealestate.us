@@ -214,15 +214,15 @@ main {
   #tidbits .container {
     display: flex;
     flex-direction: row;
-    flex-basis: auto;
+    flex-basis: 1, 0, 0;
     align-items: center;
     justify-content: space-between; }
   #tidbits .tid-1, #tidbits .tid-3 {
     background-color: rgba(181, 205, 174, 0.9);
     color: #270c68; }
   #tidbits .tid-2 {
-    background-color: rgba(27, 8, 72, 0.9);
-    color: #c9dbc4; }
+    background-color: rgba(181, 205, 174, 0.9);
+    color: #270c68; }
 
 #testimonials {
   background-color: #333;
