@@ -7,6 +7,7 @@
 
 .col-md {
     display: flex;
+    min-width: 200px;
 }
 
 .card {
@@ -19,8 +20,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         text-align: center;
+        height: 300px;
+        width: auto;
         // height: 28vh;
         // padding: 0.2rem;
 
