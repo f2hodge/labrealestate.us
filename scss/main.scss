@@ -119,10 +119,18 @@ main {
 
     .tid-1, .tid-3 {
         @include set-background(rgba(darken($tertiary-color, 7), 0.9));
+
+        h3 {
+            color: set-text-color(darken($tertiary-color, 7));
+        }
     }
 
     .tid-2 {
-        @include set-background(rgba(darken($tertiary-color, 7), 0.9));
+        @include set-background(rgba(darken($secondary-color, 7), 0.9));
+
+        h3 {
+            color: set-text-color(darken($secondary-color, 7));
+        }
     }
 }
 

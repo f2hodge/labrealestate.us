@@ -96,6 +96,7 @@
 
 .col-md {
   display: flex;
+  justify-content: center;
   min-width: 200px; }
 
 .card {
@@ -220,9 +221,13 @@ main {
   #tidbits .tid-1, #tidbits .tid-3 {
     background-color: rgba(181, 205, 174, 0.9);
     color: #270c68; }
+    #tidbits .tid-1 h3, #tidbits .tid-3 h3 {
+      color: #270c68; }
   #tidbits .tid-2 {
-    background-color: rgba(181, 205, 174, 0.9);
-    color: #270c68; }
+    background-color: rgba(27, 8, 72, 0.9);
+    color: #c9dbc4; }
+    #tidbits .tid-2 h3 {
+      color: #c9dbc4; }
 
 #testimonials {
   background-color: #333;
