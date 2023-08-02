@@ -1,38 +1,54 @@
 .container {
     max-width: 1500px;
-    padding: 0 30px;
+    padding: 0 28px;
     margin: 0 auto;
     overflow: auto;
 }
 
 .col-md {
     display: flex;
-    justify-content: center;
-    min-width: 200px;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .card {
-    margin: 0.7rem;
+    margin:  0.7rem;
     padding: 0.4rem;
     border-radius: 7%;
-    min-height: 49vh;
+    min-height: 35vh;
 
     .card-body {
         display: flex;
+        height: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
         text-align: center;
-        height: 300px;
-        width: auto;
+        // min-height: 300px;
+        // width: auto;
         // height: 28vh;
         // padding: 0.2rem;
 
+        .h1 {
+            margin-top: 1rem;
+            // justify-self: start;
+        }
+
         h3 {
-            margin: 1rem ;
+            margin: 1rem;
             font-weight: 700;
             font-size: 21px;
             line-height: 16px;
+            // justify-self: start;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+
+        a {
+            justify-self: end;
         }
     }
 }
