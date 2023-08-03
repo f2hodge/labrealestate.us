@@ -3,19 +3,22 @@ $primary-color: rgb(30, 92, 45);
 $secondary-color: rgb(39, 12, 104);
 $tertiary-color: rgb(201, 219, 196);
 $show-home-image: true;
+$villa-driveway-image: url(../img/villa-driveway2.jpg);
 $horse-banner-image: url(../img/three-horse-banner.png);
-$background-opacity: 0.1;
+$straight-aerial-image: url(../img/acreage-aerial-day-lg2.jpg);
+$background-opacity: 0.2;
 
 @mixin easeOut {
     transition: all 0.5s ease-out;
 }
 
-@mixin background {
+@mixin background($bg-img, $color) {
     @if $show-home-image {
-        &#bg-img {
-            background: $horse-banner-image;
+        &.bg-img {
+            background: $bg-img;
             background-attachment: fixed;
             background-size: cover;
+            z-index: -2;
 
             &:after {
                 content: '';
@@ -24,6 +27,8 @@ $background-opacity: 0.1;
                 right: 0;
                 width: 100%;
                 height: 100%;
+                z-index: -1;
+                background: rgba(lighten($color, 2), $background-opacity);
             }
         }
     }

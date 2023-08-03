@@ -40,7 +40,11 @@
       padding: 1rem;
       height: 150px; }
     .card .card-body a {
-      justify-self: end; }
+      transition: all 0.5s ease-out;
+      justify-self: end;
+      margin: 1rem 0;
+      padding: 0.5rem;
+      border-radius: 14%; }
 
 * {
   box-sizing: border-box;
@@ -108,28 +112,30 @@ header {
 
 main {
   display: grid;
-  padding-top: 42px; }
+  padding-top: 4vh; }
 
-#showcase {
-  background-image: url(../img/three-horse-banner.png); }
-  #showcase#bg-img {
-    background: url(../img/three-horse-banner.png);
-    background-attachment: fixed;
-    background-size: cover; }
-    #showcase#bg-img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%; }
-  #showcase #headings {
-    background: rgba(33, 100, 49, 0.1);
-    border-radius: 10% 30% 30% 10%; }
-  #showcase .container {
-    display: flex;
-    height: 50vh;
-    align-items: end; }
+#showcase.bg-img {
+  background: url(../img/acreage-aerial-day-lg2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -2; }
+  #showcase.bg-img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(42, 13, 113, 0.2); }
+
+#showcase #headings {
+  border-radius: 10% 30% 30% 10%; }
+
+#showcase .container {
+  display: flex;
+  height: 50vh;
+  align-items: end; }
 
 #tidbits {
   background-color: rgba(21, 65, 32, 0.9);
@@ -142,19 +148,47 @@ main {
     grid-template-columns: repeat(3, 1fr);
     overflow: hidden; }
   #tidbits .tid-1, #tidbits .tid-3 {
-    background-color: rgba(181, 205, 174, 0.9);
+    background-color: #b5cdae;
     color: #270c68; }
     #tidbits .tid-1 h3, #tidbits .tid-3 h3 {
       color: #270c68; }
+    #tidbits .tid-1 a, #tidbits .tid-3 a {
+      background-color: #1b0848;
+      color: #c9dbc4; }
+      #tidbits .tid-1 a:hover, #tidbits .tid-3 a:hover {
+        color: #61cb7b; }
   #tidbits .tid-2 {
-    background-color: rgba(27, 8, 72, 0.9);
+    background-color: #1b0848;
     color: #c9dbc4; }
     #tidbits .tid-2 h3 {
       color: #c9dbc4; }
+    #tidbits .tid-2 a {
+      background-color: #b5cdae;
+      color: #270c68; }
+      #tidbits .tid-2 a:hover {
+        color: #38ad55; }
 
 #testimonials {
-  background-color: #333;
-  color: #c9dbc4; }
+  background-image: url(../img/three-horse-banner.png);
+  padding: 3rem; }
+  #testimonials.bg-img {
+    background: url(../img/three-horse-banner.png);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2; }
+    #testimonials.bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(207, 223, 202, 0.2); }
+  #testimonials .container {
+    background-color: #ee6f1a; }
+  #testimonials h1 {
+    color: #000; }
 
 footer {
   background-color: #194d25;
