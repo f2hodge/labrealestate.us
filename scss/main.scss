@@ -109,6 +109,7 @@ main {
         // margin: 0 3px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
     }
 
     .tid-1, .tid-3 {
