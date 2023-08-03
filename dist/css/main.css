@@ -19,10 +19,15 @@
     height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     text-align: center; }
+    .card .card-body .card-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center; }
     .card .card-body .h1 {
-      margin-top: 1rem; }
+      margin: 1rem 0; }
     .card .card-body h3 {
       margin: 1rem;
       font-weight: 700;
