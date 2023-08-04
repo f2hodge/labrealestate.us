@@ -199,6 +199,7 @@ footer {
   background-color: #194d25;
   color: #c9dbc4;
   width: 100%;
+  margin-top: 0;
   border-top: solid #270c68 4px; }
   footer .container {
     display: flex;
