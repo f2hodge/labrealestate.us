@@ -153,11 +153,15 @@ main {
     .container {
         background-color: #ee6f1a;
     }
+}
 
-    h1 {
-        color: #000;
-        // font-size: 6rem;
-    }
+#spacer {
+    height: 300px;
+    background-color: yellow;
+}
+
+#under-spacer{
+    background: #333;
 }
 
 footer {

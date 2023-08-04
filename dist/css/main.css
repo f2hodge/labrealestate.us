@@ -187,8 +187,13 @@ main {
       background: rgba(207, 223, 202, 0.2); }
   #testimonials .container {
     background-color: #ee6f1a; }
-  #testimonials h1 {
-    color: #000; }
+
+#spacer {
+  height: 300px;
+  background-color: yellow; }
+
+#under-spacer {
+  background: #333; }
 
 footer {
   background-color: #194d25;
