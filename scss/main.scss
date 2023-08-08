@@ -9,6 +9,12 @@
 
 body {
     font-family: $font-stack;
+
+    // &::before {
+    //     display: block;
+    //     content: '';
+    //     height: 60px;
+    // }
 }
 
 a {
@@ -78,7 +84,7 @@ header {
 
 main {
     display: grid;
-    padding-top: 4vh;
+    padding-top: 42px;
 }
 
 // Showcase section
@@ -89,11 +95,12 @@ main {
     #headings {
         // background: rgba(lighten($primary-color, 2), $background-opacity);
         border-radius: 10% 30% 30% 10%;
+        margin-top: 42px;
     }
 
     .container {
         display: flex;
-        height: 50vh;
+        min-height: 70vh;
         align-items: end;
     }
 }
@@ -147,11 +154,11 @@ main {
 #testimonials {
     // @include background($straight-aerial-image, $secondary-color);
     @include background($horse-banner-image, $tertiary-color);
-    background-image: $horse-banner-image;
     padding: 3rem;
 
     .container {
-        background-color: #ee6f1a;
+        @include set-background(rgba(darken($tertiary-color, 7), $background-opacity));
+        height: 56vh;
     }
 }
 
