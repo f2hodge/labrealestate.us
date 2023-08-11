@@ -158,6 +158,7 @@ main {
 
     .container {
         @include set-background(rgba(darken($tertiary-color, 7), $background-opacity));
+        border-radius: 7px;
         height: 56vh;
     }
 }
